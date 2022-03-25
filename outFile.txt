@@ -1,0 +1,69 @@
+
+1.
+Number of word types (unique words) in training data is = 78749
+Number of word types after replacing with <unk> is = 39502
+
+2.
+Total Number of tokens in training data is = 2221290
+
+3.
+The percentage of unseen words tokens from the test corpus is =   1.806%
+The percentage of unseen word types from the test corpus is =   3.933%
+
+4.
+The percentage of unseen bigrams tokens from the test corpus is =   22.391%
+The percentage of unseen bigrams types from the test corpus is =   26.198%
+
+5. The log probability of the sentence '<s> i look forward to hearing your reply . </s>'  : 
+-------------------------------- 
+log( p( i )  ) = -8.4
+log( p( look )  ) = -11.982
+log( p( forward )  ) = -12.376
+log( p( to )  ) = -5.541
+log( p( hearing )  ) = -13.506
+log( p( your )  ) = -10.954
+log( p( reply )  ) = -17.624
+log( p( . )  ) = -4.812
+log( p( </s> )  ) = -4.625
+
+Unigrams (max likelihood) =-89.81874501974099
+--------------------------------
+
+log( p( i | <s> )  ) = -5.631
+log( p( look | i )  ) = -8.875
+log( p( forward | look )  ) = -4.346
+log( p( to | forward )  ) = -2.264
+log( p( hearing | to )  ) = -13.22
+log( p( your | hearing )  ) = undefined
+log( p( reply | your )  ) = undefined
+log( p( . | reply )  ) = undefined
+log( p( </s> | . )  ) = -0.085
+
+Bigrams (max likelihood) = undefined -- Error caused at: log (   p( your | hearing )  )
+--------------------------------
+
+log( p( i | <s> )  ) = -6.155
+log( p( look | i )  ) = -11.585
+log( p( forward | look )  ) = -10.482
+log( p( to | forward )  ) = -8.825
+log( p( hearing | to )  ) = -13.827
+log( p( your | hearing )  ) = -15.277
+log( p( reply | your )  ) = -15.31
+log( p( . | reply )  ) = -15.27
+log( p( </s> | . )  ) = -0.669
+
+Bigrams (add-one smoothing) = -97.40110857813853
+--------------------------------
+
+
+6.The perplexity of of the sentence '<s> i look forward to hearing your reply . </s>' : 
+
+Unigrams (max likelihood) = 1009.8046830192568
+Bigram (max likelihood) = +inf
+Bigram (smoothed) = 1810.7170379443874
+
+7.The perplexity of the entire test corpus :
+
+Unigrams (max likelihood) = 1079.2881373075036
+Bigram (max likelihood) = +inf
+Bigram (smoothed) = 2369.3546235259478
